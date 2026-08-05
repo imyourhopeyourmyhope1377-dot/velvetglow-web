@@ -7,67 +7,57 @@
 <title>VelvetGlow</title>
 
 <style>
+
 body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#faf6f1;
-    color:#4a4038;
+margin:0;
+font-family:Arial,sans-serif;
+background:#faf6f1;
+color:#4a4038;
 }
 
 header{
-    background:linear-gradient(135deg,#ead8cc,#fff);
-    padding:60px 20px;
-    text-align:center;
+min-height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:40px 20px;
+background:linear-gradient(135deg,#ead8cc,#fff8f3);
 }
 
-h1{
-    font-size:45px;
-    color:#9b6b50;
-    margin:0;
+.logo{
+font-size:50px;
+color:#9b6b50;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:55px;
+margin:0;
+color:#8d5f45;
 }
 
 header p{
-    font-size:18px;
-    max-width:600px;
-    margin:20px auto;
+font-size:20px;
+max-width:600px;
+line-height:1.6;
 }
 
 .boton{
-    display:inline-block;
-    margin-top:20px;
-    padding:15px 35px;
-    background:#b98b6b;
-    color:white;
-    text-decoration:none;
-    border-radius:30px;
+margin-top:25px;
+padding:16px 40px;
+background:#b98b6b;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
 }
 
-.categorias{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-    gap:20px;
-    padding:40px;
+.boton:hover{
+background:#9b6b50;
 }
 
-.card{
-    background:white;
-    padding:30px 20px;
-    border-radius:20px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
-    font-size:18px;
-}
-
-.sobre{
-    padding:40px;
-    text-align:center;
-}
-
-footer{
-    background:#eee1d8;
-    padding:25px;
-    text-align:center;
-}
 </style>
 
 </head>
@@ -76,54 +66,21 @@ footer{
 
 <header>
 
-<h1>VelvetGlow ✨</h1>
+<div class="logo">✨</div>
 
-<p>Realza tu belleza, ilumina tu esencia.</p>
+<h1>VelvetGlow</h1>
 
 <p>
-En VelvetGlow creemos que cada persona tiene un brillo único.
-Creamos un espacio donde encuentres maquillaje para resaltar tu belleza natural.
+Realza tu belleza, ilumina tu esencia.
 </p>
 
-<a class="boton" href="#">Ver categorías</a>
+<p>
+Un espacio donde encuentras maquillaje que resalta tu brillo natural y te ayuda a sentirte segura todos los días.
+</p>
+
+<a class="boton" href="#">Descubrir productos</a>
 
 </header>
-
-
-<section class="categorias">
-
-<div class="card">💄<br>Labiales</div>
-
-<div class="card">✨<br>Glosses</div>
-
-<div class="card">🌸<br>Rubores</div>
-
-<div class="card">👁️<br>Máscaras</div>
-
-<div class="card">🎨<br>Sombras</div>
-
-<div class="card">🧴<br>Skincare</div>
-
-</section>
-
-
-<section class="sobre">
-
-<h2>Sobre VelvetGlow</h2>
-
-<p>
-Nuestro objetivo es ayudarte a encontrar productos que realcen tu belleza y te hagan sentir segura.
-</p>
-
-</section>
-
-
-<footer>
-
-Próximamente nuevos productos 💖
-
-</footer>
-
 
 </body>
 </html>
