@@ -69,3 +69,22 @@ footer {
     background: #f8d7e5;
     color: #555;
 }
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.inicio img {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.inicio div {
+    text-align: center;
+}
