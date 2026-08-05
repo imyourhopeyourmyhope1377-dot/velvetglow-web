@@ -23,6 +23,48 @@ header h1 {
 }
 
 header p {
+    .productos {
+    padding: 40px;
+    text-align: center;
+}
+
+.productos h2 {
+    color: #d46a92;
+    margin-bottom: 30px;
+}
+
+.categoria-productos {
+    margin-bottom: 40px;
+}
+
+.categoria-productos h3 {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.producto {
+    background: white;
+    display: inline-block;
+    width: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.producto img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.producto p {
+    margin: 15px 0 8px;
+}
+
+.producto span {
+    color: #d46a92;
+}
     font-size: 18px;
 }
 
