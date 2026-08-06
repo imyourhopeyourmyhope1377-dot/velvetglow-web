@@ -3,121 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Velvet Glow ✨</title>
+    <title>Velvet Glow</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<section class="productos">
 
-    <h2>Productos</h2>
+<header>
+    <h1>Velvet Glow</h1>
+    <p>Descubre maquillaje que resalta tu belleza natural.</p>
+</header>
 
-    <div class="categoria-productos">
+<section class="inicio">
 
-        <h3>Skincare</h3>
-
-        <div class="producto">
-            <img src="skincare.jpg" alt="Producto skincare">
-            <p>Cuidado facial</p>
-            <span>Consulta disponibilidad</span>
-        </div>
-
-    </div>
-
-
-    <div class="categoria-productos">
-
-        <h3>Rostro</h3>
-
-       <section class="categorias">
-
-    <div class="card">
-        <img src="skincare.jpg" alt="Skincare">
-        <h2>Skincare</h2>
-
-        <div class="productos">
-            <p>Limpiadores faciales</p>
-            <p>Hidratantes</p>
-            <p>Sérums</p>
-        </div>
-    </div>
-
-
-    <div class="card">
-        <img src="rostro.jpg" alt="Rostro">
-        <h2>Rostro</h2>
-
-        <div class="productos">
-            <p>Base</p>
-            <p>Corrector</p>
-            <p>Rubor</p>
-        </div>
-    </div>
-
-
-    <div class="card">
-        <img src="labios.jpg" alt="Labios">
-        <h2>Labios</h2>
-
-        <div class="productos">
-            <p>Gloss</p>
-            <p>Labiales</p>
-        </div>
-    </div>
-
-
-    <div class="card">
-        <img src="ojos.jpg" alt="Ojos">
-        <h2>Ojos</h2>
-
-        <div class="productos">
-            <p>Rímel</p>
-        </div>
-    </div>
-
-</section>
-<header class="inicio">
-    <img src="modelo-principal.jpg" alt="Modelo Velvet Glow">
+    <img src="modelo-principal.jpg" alt="Modelo principal">
 
     <div>
-        <h1>Velvet Glow ✨</h1>
-        <p>Descubre maquillaje que realza tu belleza y tu brillo natural.</p>
-    </div>
-</header>
-<section class="categorias">
+        <h2>Bienvenida</h2>
+        <p>
+            Descubre productos de maquillaje y skincare
+            seleccionados para resaltar tu belleza.
+        </p>
 
-    <div class="card">
-        <img src="skincare.jpg" alt="Skincare">
-        <h2>Skincare</h2>
-        <p>Cuida tu piel con productos que resaltan tu belleza natural.</p>
-    </div>
+        <a href="#categorias" class="boton">
+            Ver categorías
+        </a>
 
-    <div class="card">
-        <img src="rostro.jpg" alt="Rostro">
-        <h2>Rostro</h2>
-        <p>Base, corrector y rubor para un acabado perfecto.</p>
-    </div>
-
-    <div class="card">
-        <img src="labios.jpg" alt="Labios">
-        <h2>Labios</h2>
-        <p>Gloss y labiales para darle color y brillo a tu look.</p>
-    </div>
-
-    <div class="card">
-        <img src="ojos.jpg" alt="Ojos">
-        <h2>Ojos</h2>
-        <p>Rímel y productos para destacar tu mirada.</p>
     </div>
 
 </section>
 
-<footer>
-    <p>Velvet Glow ♡ Tu belleza, tu brillo.</p>
-</footer>
+<section id="categorias" class="categorias">
+
+    <div class="card" onclick="mostrar('skincare')">
+
+        <img src="skincare.jpg" alt="Skincare">
+
+        <h2>Skincare</h2>
+
+    </div>
+
+    <div class="card" onclick="mostrar('rostro')">
+
+        <img src="rostro.jpg" alt="Rostro">
+
+        <h2>Rostro</h2>
+
+    </div>
+
+    <div class="card" onclick="mostrar('labios')">
+
+        <img src="labios.jpg" alt="Labios">
+
+        <h2>Labios</h2>
+
+    </div>
+
+    <div class="card" onclick="mostrar('ojos')">
+
+        <img src="ojos.jpg" alt="Ojos">
+
+        <h2>Ojos</h2>
+
+    </div>
+
+</section>
+    <section id="skincare" class="lista-productos" style="display:none;">
+    <h2>Skincare</h2>
+
+    <div class="producto">
+        <p>Limpiador facial</p>
+    </div>
+
+    <div class="producto">
+        <p>Sérum</p>
+    </div>
+
+    <div class="producto">
+        <p>Hidratante</p>
+    </div>
+</section>
+
+<section id="rostro" class="lista-productos" style="display:none;">
+    <h2>Rostro</h2>
+
+    <div class="producto">
+        <p>Base</p>
+    </div>
+
+    <div class="producto">
+        <p>Corrector</p>
+    </div>
+
+    <div class="producto">
+        <p>Rubor</p>
+    </div>
+</section>
+
+<section id="labios" class="lista-productos" style="display:none;">
+    <h2>Labios</h2>
+
+    <div class="producto">
+        <p>Gloss</p>
+    </div>
+
+    <div class="producto">
+        <p>Labial</p>
+    </div>
+</section>
+
+<section id="ojos" class="lista-productos" style="display:none;">
+    <h2>Ojos</h2>
+
+    <div class="producto">
+        <p>Rímel</p>
+    </div>
+</section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
-
-
-
