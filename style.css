@@ -6,24 +6,31 @@
 }
 
 body {
-    background: #fff7f9;
+    background: #fff;
     color: #444;
 }
 
+/* PORTADA */
+
 header {
+    text-align: center;
+    padding: 45px 20px;
     background: linear-gradient(135deg, #F9CDD5, #7A8450);
 }
 
 header h1 {
-    color: #d46a92;
-    font-size: 42px;
-    margin-bottom: 10px;
+    color: white;
+    font-size: 45px;
+    margin-bottom: 12px;
 }
 
 header p {
+    color: white;
     font-size: 18px;
-    color: #666;
 }
+
+
+/* MODELO PRINCIPAL */
 
 .inicio {
     display: flex;
@@ -36,8 +43,10 @@ header p {
 
 .inicio img {
     width: 340px;
+    height: 450px;
+    object-fit: cover;
     border-radius: 25px;
-    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
 
 .inicio div {
@@ -45,7 +54,7 @@ header p {
 }
 
 .inicio h2 {
-    color: #d46a92;
+    color: #7A8450;
     margin-bottom: 15px;
 }
 
@@ -54,35 +63,40 @@ header p {
     margin-bottom: 25px;
 }
 
+
+/* BOTÓN */
+
 .boton {
     display: inline-block;
-    background: #d46a92;
+    background: #7A8450;
     color: white;
     text-decoration: none;
-    padding: 12px 28px;
+    padding: 12px 30px;
     border-radius: 30px;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .boton:hover {
-    background: #bf5d83;
+    background: #66703f;
 }
+/* CATEGORÍAS */
+
 .categorias {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 25px;
-    padding: 40px;
+    padding: 50px 30px;
     max-width: 1200px;
     margin: auto;
 }
 
 .card {
     background: white;
-    border-radius: 20px;
+    border-radius: 25px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,.08);
     cursor: pointer;
-    transition: .3s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
 }
 
 .card:hover {
@@ -97,7 +111,14 @@ header p {
 
 .card h2 {
     text-align: center;
-   .card:nth-child(1) h2 {
+    padding: 20px;
+    font-size: 24px;
+}
+
+
+/* COLORES DE CADA CATEGORÍA */
+
+.card:nth-child(1) h2 {
     color: #F9CDD5;
 }
 
@@ -112,23 +133,23 @@ header p {
 .card:nth-child(4) h2 {
     color: #7A8450;
 }
-    padding: 18px;
-    font-size: 22px;
-}
+
+
+/* PRODUCTOS DESPLEGABLES */
 
 .lista-productos {
     max-width: 900px;
     margin: 30px auto;
     background: white;
-    border-radius: 20px;
     padding: 30px;
-    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .lista-productos h2 {
-    color: #d46a92;
-    margin-bottom: 20px;
     text-align: center;
+    color: #7A8450;
+    margin-bottom: 25px;
 }
 
 .producto {
@@ -144,14 +165,18 @@ header p {
     font-size: 17px;
     color: #555;
 }
+/* CONTACTO Y PIE DE PÁGINA */
+
 footer {
     text-align: center;
-    padding: 25px;
+    padding: 30px 20px;
     margin-top: 50px;
-    background: #f8d7e5;
-    color: #666;
-    font-size: 15px;
+    background: #F9CDD5;
+    color: #555;
 }
+
+
+/* RESPONSIVE PARA CELULAR */
 
 @media (max-width: 768px) {
 
@@ -162,10 +187,15 @@ footer {
 
     .inicio img {
         width: 280px;
+        height: 380px;
     }
 
     header h1 {
-        font-size: 34px;
+        font-size: 35px;
+    }
+
+    .categorias {
+        padding: 30px 20px;
     }
 
     .card img {
