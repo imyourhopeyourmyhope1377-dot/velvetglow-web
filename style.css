@@ -203,3 +203,27 @@ footer {
     }
 
 }
+.contacto {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contacto .boton {
+    text-align: center;
+    min-width: 180px;
+}
+
+.categorias-btn {
+    background: #7A8450;
+}
+
+.instagram-btn {
+    background: #F9CDD5;
+    color: #555;
+}
+
+.whatsapp-btn {
+    background: #7A8450;
+}
