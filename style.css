@@ -106,3 +106,15 @@ header p {
     object-fit: cover;
     border-radius: 15px;
 }
+.productos {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.productos p {
+    background: #fff7f9;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 8px 0;
+}
