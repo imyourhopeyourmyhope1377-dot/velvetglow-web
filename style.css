@@ -96,6 +96,9 @@ header p {
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+   .card {
+    padding-bottom: 20px;
+}
     transition: 0.3s;
 }
 
@@ -111,10 +114,17 @@ header p {
 
 .card h2 {
     text-align: center;
-    padding: 20px;
+    padding: 15px 10px 8px;
     font-size: 24px;
 }
 
+.card p {
+    text-align: center;
+    padding: 0 20px 15px;
+    font-size: 15px;
+    color: #666;
+    line-height: 1.5;
+}
 
 /* COLORES DE CADA CATEGORÍA */
 
