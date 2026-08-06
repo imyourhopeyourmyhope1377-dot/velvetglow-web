@@ -205,9 +205,10 @@ footer {
 }
 .contacto {
     display: flex;
-    gap: 15px;
+    gap: 25px;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 25px;
 }
 
 .contacto .boton {
